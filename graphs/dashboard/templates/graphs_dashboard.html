@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Graphs Dashboard</title>
+    <link rel="stylesheet" id="ample-style-css" href="{% static 'style.css' %}" type="text/css" media="all">
+</head>
+<body>
+    <form method = "post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Upload</button>
+    </form>
+
+    {% if uploaded_image %}
+    <div class="img-container">
+      <img src="{{uploaded_image.src}}" alt="" />
+      <div class="overlay"></div>
+    </div>
+    {% endif %}
+<script src="{% static 'main.js' %}"></script>
+</body>
+</html>

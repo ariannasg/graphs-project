@@ -1,0 +1,5 @@
+.idea
+.venv
+graphs/static/images
+*.sqlite3
+*.pyc
