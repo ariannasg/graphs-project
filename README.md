@@ -25,17 +25,18 @@ Experiment.
     ```
     (.venv) ➜ make show-migrations
     ```
-- Inside the virtual env, apply all pending migrations. 
+- Inside the virtual environment, apply all pending migrations. 
   Then verify it was done successfully (you should see an "x" next to each migration):
     ```
     (.venv) ➜ make apply-migrations
     (.venv) ➜ make show-migrations
     ```
-- Inside the virtual env (under the graphs folder), start a server to run the project:
+- Inside the virtual environment, start a server to run the project:
     ```
     (.venv) ➜ make run
     ```
 - Visit URL: http://127.0.0.1:8000/ to make sure the server is up.
+- Use the app.
 
 ## License
 This project is licensed under the terms of the MIT License.
