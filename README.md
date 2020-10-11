@@ -14,8 +14,14 @@ Experiment.
 - Install python 3: https://www.python.org/downloads/
 - Create and activate a virtual environment where we can install all required packages:
     ```
+    (Mac)
     python3 -m venv ./.venv
     source .venv/bin/activate
+    ```
+    ```
+    (Windows)
+    python -m venv C:\path\venv
+    C:\path\venv\Scripts\activate
     ```
 - Inside the virtual environment, install project requirements:
     ```
