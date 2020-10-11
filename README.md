@@ -12,6 +12,7 @@ Experiment.
 
 ## Project setup
 - Install python 3: https://www.python.org/downloads/
+- Install Pycharm: https://www.jetbrains.com/pycharm/download/
 - Create and activate a virtual environment where we can install all required packages:
     ```
     (Mac)
