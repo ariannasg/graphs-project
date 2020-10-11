@@ -18,29 +18,48 @@ Experiment.
     (Mac)
     python3 -m venv ./.venv
     source .venv/bin/activate
-    ```
-    ```
+ 
     (Windows)
     python -m venv C:\path\venv
     C:\path\venv\Scripts\activate
     ```
 - Inside the virtual environment, install project requirements:
     ```
+    (Mac)
     (.venv) ➜ make install
+ 
+    (Windows)
+    (venv) ➜ pip install -r requirements.txt
     ```
 - Inside the virtual environment, check the migration files that we need to apply:
     ```
+    (Mac)
     (.venv) ➜ make show-migrations
+  
+    (Windows)
+    (venv) ➜ cd graphs
+    (venv) ➜ python manage.py showmigrations
     ```
 - Inside the virtual environment, apply all pending migrations. 
   Then verify it was done successfully (you should see an "x" next to each migration):
     ```
+    (Mac)
     (.venv) ➜ make apply-migrations
     (.venv) ➜ make show-migrations
+  
+    (Windows)
+    cd graphs
+    (venv) ➜ python manage.py migrate
+    (venv) ➜ python manage.py showmigrations
     ```
 - Inside the virtual environment, start a server to run the project:
     ```
+    (Mac)
     (.venv) ➜ make run
+  
+    (Windows)
+    (venv) ➜ cd graphs
+    (venv) ➜ python manage.py runserver
     ```
 - Visit URL: http://127.0.0.1:8000/ to make sure the server is up.
 - Use the app.
