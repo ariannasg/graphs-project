@@ -1,9 +1,15 @@
 :root {
-  --min-allowed-width: 150px;
+  --min-allowed-width: 50px;
+}
+
+body {
+    overflow:auto;
+    width:100%;
+    height:100%;
 }
 
 .main-container {
-    margin: 2%;
+    margin: 0%;
     text-align: left;
 }
 

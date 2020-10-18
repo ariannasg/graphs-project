@@ -1,6 +1,6 @@
-var maxAllowedWidth = 1650;
-var minAllowedWidth = 150;
-var widthInterval = 50;
+var maxAllowedWidth = 1950;
+var minAllowedWidth = 50;
+var widthInterval = 15;
 
 function increase_width(){
     var imgContainer = document.getElementById("img-container");
